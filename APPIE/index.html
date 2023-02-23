@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js hydrated">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/ico.png" />
+    <link rel="apple-touch-icon" href="img/ico.png" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Appie</title>
+  </head>
+
+  <body>
+    <header class="header sticky">
+      <!--NAV BAR-->
+      <a href="#index.html" class="logo">
+        <img src="img/logo.png" alt=" a pic of our logo" />
+      </a>
+      <nav>
+        <div class="nav-bar">
+          <ul class="nav-bar-list links">
+            <li class="link">
+              <a class="nav-bar-link" href="#"
+                >Home
+                <span class="nav-chev md hydrated">
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></span>
+              </a>
+            </li>
+            <li class="link">
+              <a class="nav-bar-link" href="#service">Service </a>
+            </li>
+            <li class="link">
+              <a class="nav-bar-link" href="#pages"
+                >Pages
+                <span class="nav-chev md hydrated">
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></span>
+              </a>
+            </li>
+            <li class="link">
+              <a class="nav-bar-link" href="#news"
+                >News
+                <span class="nav-chev md hydrated">
+                  <ion-icon name="chevron-down-outline"></ion-icon
+                ></span>
+              </a>
+            </li>
+            <li class="link">
+              <a class="nav-bar-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a href="#started" class="nav-bar-link nav-btn">Get Started</a>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="hero-h1">
+            Ready to launch your app in one,
+            <span>Application</span>
+          </h1>
+          <p class="hero-p">Find the best application in the appie.</p>
+          <form class="hero-form">
+            <label for="email">
+              <span class="mail-icon md hydrated"
+                ><i class="fa-regular fa-envelope"></i
+              ></span>
+            </label>
+            <input
+              class="input-text"
+              type="mail"
+              id="mail"
+              placeholder="info@appie.com"
+              required=""
+            />
+            <button class="input-box">
+              <span class="arrow-icon md hydrated">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+          </form>
+          <div class="feedbacks">
+            <div class="feedback-imgs">
+              <img
+                class="feedback-imgs one"
+                src="img/people/customer-1.jpg"
+                alt="customer-photo"
+              />
+              <img
+                class="feedback-imgs two"
+                src="img/people/customer-2.jpg"
+                alt="customer-photo"
+              />
+              <img
+                class="feedback-imgs three"
+                src="img/people/customer-4.jpg"
+                alt="customer-photo"
+              />
+              <img
+                class="feedback-imgs four"
+                src="img/people/customer-5.jpg"
+                alt="customer-photo"
+              />
+            </div>
+            <div class="feedback-text">
+              <span>30k</span>
+              <p>Feedback</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img-box">
+          <img
+            src="img/hero.png"
+            class="hero-img"
+            alt="A pic of our app in phone"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION  -->
+
+    <section class="features-section" id="service">
+      <div class="container">
+        <h2 class="features-h2">How does it work</h2>
+        <div class="feature-boxs">
+          <p class="features-p">
+            The full monty spiffing good time no biggie cack grub fentastic.
+          </p>
+          <a href="#" class="features-btn"
+            >View all Features
+            <span class="features-ar md hydrated"
+              ><i class="fa-solid fa-arrow-right →"></i
+            ></span>
+          </a>
+        </div>
+      </div>
+      <div></div>
+      <div class="container grid grid3">
+        <div class="box">
+          <span class="features-icon border icon1 md hydrated">
+            <i class="fa-sharp fa-solid fa-bolt-lightning"></i>
+          </span>
+          <p class="boxs-title">Fast and intuitive</p>
+          <p class="boxs-text">
+            Oxford posh bevvy give us a bell gutted mate spend a penny quaint
+            cockup plastered.
+          </p>
+          <a class="read-more">
+            Read Mor
+            <span class="symbol-more md hydrated"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </a>
+        </div>
+        <!------------->
+        <div class="box">
+          <span class="features-icon border icon2 md hydrated">
+            <i class="fa-solid fa-house"></i>
+          </span>
+          <p class="boxs-title">Fast and intuitive</p>
+          <p class="boxs-text">
+            Oxford posh bevvy give us a bell gutted mate spend a penny quaint
+            cockup plastered.
+          </p>
+          <a class="read-more">
+            Read Mor
+            <span class="symbol-more md hydrated"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </a>
+        </div>
+        <!------------->
+
+        <div class="box">
+          <span class="features-icon border icon3 md hydrated">
+            <i class="fa-solid fa-link"></i>
+          </span>
+          <p class="boxs-title">Fast and intuitive</p>
+          <p class="boxs-text">
+            Oxford posh bevvy give us a bell gutted mate spend a penny quaint
+            cockup plastered.
+          </p>
+          <p class="read-more">
+            Read Mor
+            <span class="symbol-more md hydrated"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </p>
+        </div>
+        <!------------->
+
+        <div class="box">
+          <span class="features-icon border icon4 md hydrated">
+            <i class="fa-solid fa-bell"></i>
+          </span>
+          <p class="boxs-title">Fast and intuitive</p>
+          <p class="boxs-text">
+            Oxford posh bevvy give us a bell gutted mate spend a penny quaint
+            cockup plastered.
+          </p>
+          <p class="read-more">
+            Read Mor
+            <span class="symbol-more md hydrated"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </p>
+        </div>
+        <!------------->
+
+        <div class="box">
+          <span class="features-icon border icon5 md hydrated">
+            <i class="fa-solid fa-gear"></i
+          ></span>
+          <p class="boxs-title">Fast and intuitive</p>
+          <p class="boxs-text">
+            Oxford posh bevvy give us a bell gutted mate spend a penny quaint
+            cockup plastered.
+          </p>
+          <p class="read-more">
+            Read Mor
+            <span class="symbol-more md hydrated"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </p>
+        </div>
+        <!------------->
+
+        <div class="box">
+          <span class="features-icon border icon6 md hydrated">
+            <i class="fa-solid fa-lock"></i
+          ></span>
+          <p class="boxs-title">Fast and intuitive</p>
+          <p class="boxs-text">
+            Oxford posh bevvy give us a bell gutted mate spend a penny quaint
+            cockup plastered.
+          </p>
+          <p class="read-more">
+            Read Mor
+            <span class="symbol-more md hydrated"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!---MARKITING SECTION--->
+
+    <section class="marketing-section">
+      <div class="container mark">
+        <div class="marketing grid grid2">
+          <div class="marketing-img" data-aos="fade-right">
+            <img class="mark-img" src="img/about-thumb.png" alt="" />
+          </div>
+          <div class="mark-text-box">
+            <p class="mark-title">Marketing</p>
+            <h2 class="mark-h2">Make a lasting impression with appie.</h2>
+            <p class="mark-p">
+              Jolly good quaint james bond victoria sponge happy days cras arse
+              over blatant.
+            </p>
+
+            <div class="check-boxes">
+              <div class="check-flex">
+                <div class="check-icon">
+                  <span class="check-mark md hydrated">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
+                <div class="check-box">
+                  <p class="check-text">Carefully designed</p>
+
+                  <p class="check-info">
+                    Mucker plastered bugger all mate morish are.
+                  </p>
+                </div>
+              </div>
+              <div class="check-flex">
+                <div class="check-icon">
+                  <span class="check-mark md hydrated">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                </div>
+                <div class="check-box">
+                  <p class="check-text">Choose a App</p>
+
+                  <p class="check-info">
+                    Mucker plastered bugger all mate morish are.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- PROPERITIES SECTION --->
+
+    <section class="properities section" id="pages">
+      <div class="container">
+        <div class="properities-text">
+          <h2>Wherever you need us the most</h2>
+          <p>
+            The full monty spiffing good time no biggie cack grub fantastic.
+          </p>
+        </div>
+        <div class="prop-container grid grid2">
+          <div class="flex-col properities-box">
+            <div class="flex-col prop-text-box">
+              <div class="box2">
+                <div class="dot-icon"></div>
+                <div class="dot-color dot-1">
+                  <h3 class="prop-h3">Well Intergrated</h3>
+                  <p class="prop-p">
+                    The bee's knees chancer car boot absolutely.
+                  </p>
+                </div>
+              </div>
+              <div class="box2">
+                <div class="dot-icon dot-2"></div>
+                <h3 class="prop-h3">Clean and modern Design</h3>
+                <p class="prop-p">
+                  The bee's knees chancer car boot absolutely.
+                </p>
+              </div>
+              <div class="box2">
+                <div class="dot-icon dot-3"></div>
+                <h3 class="prop-h3">Light and dark mode</h3>
+                <p class="prop-p">
+                  The bee's knees chancer car boot absolutely.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="properities-img" data-aos="fade-left">
+            <img class="prop-img" src="img/features-thumb-2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---INFORMATION SECTION  --->
+
+    <section class="information section" id="news">
+      <div class="container">
+        <h2 class="info-h2">How does it work</h2>
+        <p class="info-p">
+          The full monty spiffing good time no biggie cack grub fentastic.
+        </p>
+        <div class="icons grid grid4">
+          <div class="info">
+            <img src="img/icons/counter-icon-1.svg" alt="" />
+            <span class="info-num"
+              >45<span class="k">k</span>
+              <span class="plus">+</span>
+            </span>
+            <p class="info-text">Active Installation</p>
+          </div>
+          <div class="info">
+            <img src="img/icons/counter-icon-2.svg" alt="" />
+
+            <span class="info-num"
+              >108
+              <span class="plus">+</span>
+            </span>
+            <p class="info-text">Active Installation</p>
+          </div>
+          <div class="info">
+            <img src="img/icons/counter-icon-3.svg" alt="" />
+
+            <span class="info-num"
+              >307
+              <span class="plus">+</span>
+            </span>
+            <p class="info-text">Active Installation</p>
+          </div>
+          <div class="info">
+            <img src="img/icons/counter-icon-4.svg" alt="" />
+
+            <span class="info-num"
+              >725<span class="k">k</span>
+              <span class="plus">+</span>
+            </span>
+            <p class="info-text">Active Installation</p>
+          </div>
+        </div>
+
+        <div class="vid">
+          <div class="flex-col flex space align">
+            <div class="vid-btn">
+              <span class="start"><i class="fa-solid fa-play"></i></span>
+              <img class="vid-img" src="img/video-thumb-1.jpg" alt="" />
+            </div>
+            <div class="vid-info">
+              <h3 class="vid-title">
+                Watch the two-minute video to learn how.
+              </h3>
+              <p class="vid-p">
+                The wireless cheesed on your bike mate zonked a load of old tosh
+                hunky dory it's all gone to pot haggle william car boot pear
+                shaped geeza.
+              </p>
+              <a href="#" class="vid-butn"> Get Started </a>
+            </div>
+          </div>
+
+          <div class="vid-slide">
+            <img class="vid-img2" src="img/video-slide-1.jpg" alt="" />
+            <div class="slide-buttons">
+              <span class="left-icon btn-hov md hydrated"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></span>
+              <span class="right-icon btn-hov md hydrated"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- DOWNLOAD SECTION--->
+
+    <section class="download-section">
+      <div class="container downloading">
+        <div class="sec-alien">
+          <div><p class="download-head">Download Our App</p></div>
+          <div class="dawnload-content">
+            <h2>
+              App is available <br />
+              for free on app store
+            </h2>
+
+            <p>
+              Jolly good quaint james bond victoria sponge happay days cras arse
+              over blatant
+            </p>
+          </div>
+          <div class="icons">
+            <div class="icon">
+              <i class="fa-brands fa-apple"></i>
+              <div>
+                <span class="down-txt">Download for</span>
+                <p class="down-logo">iOS</p>
+              </div>
+            </div>
+
+            <div class="icon">
+              <i class="fa-brands fa-google-play"></i>
+              <div>
+                <span class="down-txt">Download for</span>
+                <p class="down-logo">Android</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- PRICEES SECTION --->
+
+    <section class="pricing-section" id="started">
+      <div class="container">
+        <h2 class="price-head txt">Simple pricing for Everyone</h2>
+        <p class="subtitle txt">
+          The full monty spiffing good time no biggie cack grub fantastic.
+        </p>
+        <div class="plan">
+          <button class="m-plan">Monthly</button>
+          <button class="y-plan">Yearly</button>
+        </div>
+        <div class="pricing-boxes grid grid3">
+          <div class="price-box">
+            <p class="price-text">Fresh</p>
+            <p class="price">
+              <span class="sign"><sup>$</sup></span>
+              <span class="price-num">04</span>
+              <span class="per">/month</span>
+            </p>
+            <p class="trial">Get your 14 day free trial</p>
+            <ul class="price-list">
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> 60-day chat history </span>
+              </li>
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> 15 GB cloud storage </span>
+              </li>
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> 24/7 Support </span>
+              </li>
+            </ul>
+            <button class="price-btn btn1">Choose plan</button>
+          </div>
+          <!---------------------------->
+          <div class="price-box pop-box">
+            <p class="price-text">Sweet</p>
+            <p class="price">
+              <span class="sign"><sup>$</sup></span>
+              <span class="price-num">16</span>
+              <span class="per">/month</span>
+            </p>
+            <p class="trial">Billed $276 per website annually.</p>
+            <ul class="price-list">
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> 60-day chat history </span>
+              </li>
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> 50 GB cloud storage </span>
+              </li>
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> 24/7 Support </span>
+              </li>
+            </ul>
+            <button class="price-btn btn-2">Choose plan</button>
+          </div>
+          <!---------------------------->
+          <div class="price-box box3">
+            <p class="price-text">Juicy</p>
+            <p class="price">
+              <span class="sign"><sup>$</sup></span>
+              <span class="price-num">27</span>
+              <span class="per">/month</span>
+            </p>
+            <p class="trial">Billed $276 per website annually.</p>
+            <ul class="price-list">
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> 60-day chat history </span>
+              </li>
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> Data security </span>
+              </li>
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> 100 GB cloud storage </span>
+              </li>
+              <li>
+                <span class="price-mark md hydrated"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <span> 24/7 Support </span>
+              </li>
+            </ul>
+            <button class="price-btn">Choose plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- REVIEWES SECTION --->
+
+    <section class="testimonial-section">
+      <div class="container test">
+        <div class="testimonial-container">
+          <div class="testimonial-pic">
+            <img
+              src="img/project1/testimonial.jpg"
+              alt="Customer testimonial"
+            />
+            <div class="stars">
+              <div class="md hydrated">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="review">(4.7) review</p>
+          </div>
+          <div class="test-info">
+            <p class="test-txt">
+              Why I say old chap that is spiffing chip shop such a fibber the
+              bee's knees, the wireless Richard fantastic do one cracking goal
+              pukka baking cakes starkers much don't get shirty wit hme argy
+              bargy, I naff chimney pot blimey he lost his bottle cup.
+            </p>
+            <div class="person-info">
+              <div>
+                <p class="person-name">Hanson Deck</p>
+                <p class="person-job">Web developer</p>
+              </div>
+              <div class="btns">
+                <span class="left-icon md hydrated">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </span>
+                <span class="right-icon md hydrated">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- SPONSESRS SECTION --->
+
+    <section class="sponsers-section">
+      <div class="container">
+        <h2 class="sponser-head txt">
+          Appie works best with your favorite platforms
+        </h2>
+        <p class="subtitle txt">Join over 40,000 businesses worldwide.</p>
+
+        <div class="sponsers-container grid grid6">
+          <img src="img/sponsers/sponser-1.png" alt="" class="sponser-img" />
+          <img src="img/sponsers/sponser-2.png" alt="" class="sponser-img" />
+          <img src="img/sponsers/sponser-3.png" alt="" class="sponser-img" />
+          <img src="img/sponsers/sponser-4.png" alt="" class="sponser-img" />
+          <img src="img/sponsers/sponser-5.png" alt="" class="sponser-img" />
+          <img src="img/sponsers/sponser-6.png" alt="" class="sponser-img" />
+          <img src="img/sponsers/sponser-7.png" alt="" class="sponser-img" />
+          <img src="img/sponsers/sponser-8.png" alt="" class="sponser-img" />
+          <img src="img/sponsers/sponser-9.png" alt="" class="sponser-img" />
+          <img src="img/sponsers/sponser-10.png" alt="" class="sponser-img" />
+        </div>
+      </div>
+    </section>
+
+    <!---FOOTER--->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="foot-container">
+          <div class="footer-logo">
+            <a href="#"><img src="img/logo.png" alt="" /></a>
+            <p class="footer-txt">
+              Appie WordPress is theme is the last theme you will ever have.
+            </p>
+            <a href="#" class="footer-link">
+              <span class="foot-link">Read More</span>
+              <span class="md hydrated"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </a>
+            <div class="soical">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="company">
+            <h3 class="title">Company</h3>
+            <ul class="list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#"> Blog</a></li>
+              <li><a href="#"> Contact</a></li>
+            </ul>
+          </div>
+          <div class="support">
+            <h3 class="title">Support</h3>
+            <ul class="list">
+              <li><a href="">Community</a></li>
+              <li><a href="">Resources</a></li>
+              <li><a href="">Faqs</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Careers</a></li>
+            </ul>
+          </div>
+          <div class="address">
+            <h3 class="title" id="contact">Get In Touch</h3>
+            <ul class="list">
+              <li>
+                <span class="foot-icon hydrated md"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <a href=""> support@appie.com</a>
+              </li>
+              <li>
+                <span class="foot-icon hydrated md"
+                  ><i class="fa-solid fa-phone-flip"></i
+                ></span>
+                <a href="tel:+(642) 342 762 44"> +(642) 342 762 44</a>
+              </li>
+              <li>
+                <span class="foot-icon hydrated md"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <a href=""
+                  >442 Belle Terre St Floor 7, San Francisco, AV 4206</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="scroll-up">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+          <div class="copyrights">
+            <div class="copyright-down">
+              <a href="#" class="apple">
+                <span class="md hydrated"
+                  ><i class="fa-brands fa-apple"></i
+                ></span>
+                <span>Download for iOS</span>
+              </a>
+              <a href="#" class="android">
+                <span class="md hydrated"
+                  ><i class="fa-brands fa-google-play"></i
+                ></span>
+                <span>Download for Android</span>
+              </a>
+            </div>
+            <p class="copy">
+              Copyright © <span class="year">2023</span> Appie. All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
