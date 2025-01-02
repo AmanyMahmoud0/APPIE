@@ -1,10 +1,10 @@
-/////////////////////////////////////////////////
+
 // Set current year
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
-/////////////////////////////////////////////////
+
 // Make mobile navigation work
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
@@ -14,7 +14,7 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-/////////////////////////////////////////////////
+
 // Smooth scrolling animation
 
 const allLinks = document.querySelectorAll("a:link");
@@ -43,8 +43,8 @@ allLinks.forEach(function (link) {
   });
 });
 
-/////////////////////////////////////////////////
-// Sticky navigation
+
+// Sticky nav
 
 const sectionHeroEl = document.querySelector(".section-hero");
 
@@ -70,8 +70,8 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 
-/////////////////////////////////////////////////
-// Fixing flexbox gap property missing in some Safari versions
+
+// Fixing flexbox gap property 
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
